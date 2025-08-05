@@ -3,9 +3,9 @@ const icon = document.getElementById("heartIcon");
 
 btn.addEventListener("click", () => {
   if (icon.src.endsWith("heart.svg")) {
-    icon.src = "../assets/images/heart-fill.svg"; // 切換黑色圖
+    icon.src = "./assets/images/heart-fill.svg"; // 切換黑色圖
   } else {
-    icon.src = "../assets/images/heart.svg"; // 切回白色圖
+    icon.src = "./assets/images/heart.svg"; // 切回白色圖
   }
 });
 
