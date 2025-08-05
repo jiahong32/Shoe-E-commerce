@@ -1,0 +1,1 @@
+import"./main-DMOel_Zz.js";const c=document.querySelectorAll(".tablist li"),s=document.querySelectorAll(".tab-content");c.forEach(t=>{t.addEventListener("click",()=>{c.forEach(e=>e.classList.remove("active")),s.forEach(e=>e.classList.remove("active")),t.classList.add("active");const a=t.getAttribute("data-tab");document.getElementById(a).classList.add("active")})});
