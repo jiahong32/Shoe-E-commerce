@@ -4,9 +4,31 @@
   gap: 10px;
 }
 
+.bread-item {
+  position: relative;
+}
+
+
+ol li{
+  list-style: none;
+}
+
+/* 自動加 / 分隔符，除了最後一個 */
+.bread-item:not(:last-child)::after {
+  content: "/";
+  margin-left: 10px; /* 分隔符間距 */
+  color: #999;
+}
+
+/* 當前頁面 */
+.bread-item.active {
+  font-weight: bold;
+  color: #000;
+}
+
 .menu {
   box-sizing: border-box;
-  min-width: 196px;
+  width: 196px;
   padding-right: 24px;
 }
 
@@ -54,6 +76,13 @@
   gap: 10px;
 }
 
+@media (max-width: 776px) {
+  .pages {
+    gap: 8px;
+  }
+
+}
+
 .page,
 .icon-container {
   display: block;
@@ -67,6 +96,6 @@
   background-color: #f8f9fa;
 }
 
-.page:active {
+.page.selected {
   background-color: #c0fa73;
 }

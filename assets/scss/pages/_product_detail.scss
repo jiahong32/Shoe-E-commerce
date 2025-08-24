@@ -117,6 +117,16 @@
   border: 1px solid #6c757d;
 }
 
+.size-btn:disabled {
+  cursor: not-allowed;
+}
+
+.size-btn:disabled:hover,
+.size-btn:disabled:focus {
+  border: 1px solid #dee2e6;
+  background-color: #ffffff;
+}
+
 .size-warrper {
   display: flex;
   flex-wrap: wrap;
